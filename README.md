@@ -1,11 +1,10 @@
 # ozgrav-dp2-workshop
 
 ## Getting the data
-Choose your own adventure:
 - If you have a Rubin RSP account, you can generate your own filtered dataset using SQL queries with a notebook here: https://nb.lsst.io/index.html
     - You can also use the API (https://data.lsst.cloud/api-aspect) but I've found its much slower than filtering the data on an RSP notebook and has more stringent row limits.
     - The ideal solution is an Independent Data Access Center, but the OzStar IDAC does not yet have the DP2 data.
-- Here (https://drive.google.com/drive/folders/1ZU-3RhBylzweO07juBsYvTvAKd-9C_gk?usp=sharing) is some data that I have prepared earlier using a notebook with the following:
+- Here (https://drive.google.com/drive/folders/1ZU-3RhBylzweO07juBsYvTvAKd-9C_gk?usp=sharing) is some data that I have prepared earlier using a notebook with the following.  Download it into the data directory in this repo.
 ```python
 from lsst.rsp import RSPDiscovery
 import pyvo
@@ -82,3 +81,7 @@ pd.concat(result_arr).to_parquet("sn_data/ForcedSourceOnDiaObject.parquet",index
 > **Note:** This is quite narrowly filtered for fast(ish) transients which have a fade rate of >10% per day. To look for slower evolving things or variable stars, you might want to do your own query rather than using the data on the google drive.
 
 ## Preparing the python environment
+In a fresh python environment, run the following command:
+```
+pip install astropy numpy pandas pyarrow matplotlib astro-datalab pyvo babamul astroquery
+```
