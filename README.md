@@ -1,10 +1,12 @@
 # ozgrav-dp2-workshop
 
+EDIT: created a radio_data folder with ASKAP Rubin DDF follow-up and VAST Extragalactic source dataframes.
+
 ## Getting the data
 - If you have a Rubin RSP account, you can generate your own filtered dataset using SQL queries with a notebook here: https://nb.lsst.io/index.html
     - You can also use the API (https://data.lsst.cloud/api-aspect) but I've found its much slower than filtering the data on an RSP notebook and has more stringent row limits.
     - The ideal solution is an Independent Data Access Center, but the OzStar IDAC does not yet have the DP2 data.
-- Here (https://drive.google.com/drive/folders/1ZU-3RhBylzweO07juBsYvTvAKd-9C_gk?usp=sharing) is some data that I have prepared earlier using a notebook with the following.  Download it into the data directory in this repo. This google drive link now also includes radio data. 
+- Here (https://drive.google.com/drive/folders/1ZU-3RhBylzweO07juBsYvTvAKd-9C_gk?usp=sharing) is some data that I have prepared earlier using a notebook with the following.  Download it into the data directory in this repo. 
 ```python
 from lsst.rsp import RSPDiscovery
 import pyvo
