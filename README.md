@@ -80,6 +80,8 @@ pd.concat(result_arr).to_parquet("sn_data/ForcedSourceOnDiaObject.parquet",index
 ```
 > **Note:** This is quite narrowly filtered for fast(ish) transients which have a fade rate of >10% per day. To look for slower evolving things or variable stars, you might want to do your own query rather than using the data on the google drive.
 
+The DP2 table schema is available here: https://sdm-schemas.lsst.io/dp2.html
+
 ## Preparing the python environment
 In a fresh python3.11 environment:
 ```
