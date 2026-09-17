@@ -81,7 +81,7 @@ pd.concat(result_arr).to_parquet("sn_data/ForcedSourceOnDiaObject.parquet",index
 > **Note:** This is quite narrowly filtered for fast(ish) transients which have a fade rate of >10% per day. To look for slower evolving things or variable stars, you might want to do your own query rather than using the data on the google drive.
 
 ## Preparing the python environment
-In a fresh python environment, run the following command:
+In a fresh python3.11 environment, run the following command:
 ```
 pip install astropy numpy pandas pyarrow matplotlib astro-datalab pyvo babamul astroquery ipykernel extinction dustmaps
 ```
