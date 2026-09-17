@@ -83,5 +83,5 @@ pd.concat(result_arr).to_parquet("sn_data/ForcedSourceOnDiaObject.parquet",index
 ## Preparing the python environment
 In a fresh python3.11 environment, run the following command:
 ```
-pip install astropy numpy pandas pyarrow matplotlib astro-datalab pyvo babamul astroquery ipykernel extinction dustmaps
+pip install astropy numpy pandas pyarrow matplotlib astro-datalab pyvo babamul astroquery ipykernel extinction dustmaps notebook
 ```
